@@ -1,0 +1,13 @@
+.paragraph {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.paragraph div {
+    margin: 2%;
+}
+
+@media only screen and (max-width: 685px) {
+    .paragraph {
+        grid-template-columns: 100%;
+    }
+}
