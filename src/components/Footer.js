@@ -1,11 +1,15 @@
 import React from 'react';
 import './Footer.css';
 import { FaCopyright } from 'react-icons/fa';
-import soil from '../images/soil.png';
+import soil from '../images/nasa.jpg';
 
 function Footer() {
     return (
-        <div className='footer p-5' style={{backgroundImage: `url(${soil})`}}>
+        <div className='footer p-5' style={{
+            backgroundImage: `url(${soil})`,
+            backgroundPosition: 'center',
+            backgroundSize: 'cover'
+            }}>
             <div className='container'>
                 <ul>
                     <li className='nav-item'>
