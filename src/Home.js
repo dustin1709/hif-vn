@@ -1,6 +1,7 @@
 import React, {Component} from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
+import background from './images/background.jpg';
 
 import cover1 from './images/cover.png';
 import cover2 from './images/cover1.png';
@@ -10,8 +11,10 @@ import cover4 from './images/cover3.png';
 function Home() {
     return (
         <div id='home'>
-        <div style={{marginTop: '90.25px', clear: 'both'}}></div>
-        <Carousel
+        {/* <div style={{marginTop: '90.25px', clear: 'both'}}></div> */}
+        <img src={background} alt="background" />
+        
+        {/* <Carousel
          className="md:ml-10 md:mr-10" autoPlay={true} 
          infiniteLoop={true} interval={2500} 
          showArrows={false} showThumbs={false} showIndicators={false}>
@@ -27,7 +30,7 @@ function Home() {
             <div>
                 <img src={cover3} />
             </div>
-        </Carousel>
+        </Carousel> */}
         </div>
     )
 }

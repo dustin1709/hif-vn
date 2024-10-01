@@ -5,7 +5,7 @@ import './css/About.css';
 function About() {
     return (
         <div id='about' className="md:ml-10 md:mr-10 mr-5 ml-5 mt-2 pt-5 pb-10 pl-1 pr-2">
-            <h1 className="text-4xl pt-5 pb-1">More about us</h1>
+            <h1 className="text-4xl pt-5 pb-1">Who we are</h1>
 
             <div className="paragraph">
                 <div>
