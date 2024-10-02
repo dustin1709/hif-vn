@@ -78,12 +78,10 @@ function Contact() {
             </div>
             <div className="pl-5 pt-2 pb-8">
                 <h1 className="text-xl font-bold">Contact emails</h1>
-                <p className="pl-8 pr-8 pt-5">
+                <p className="pl-2 pt-5">
                     For requesting purchase of goods and services: <a className="text-blue-900 hover:underline" href="mailto:business@qem-global.com">business@qem-global.com</a>
-                    <br />
-                    <i className="text-sm">PSA: For retail purchase, we do NOT reccommend you contacting us. We have agencies across Vietnam, as our commitment with B2B.</i>
                 </p>
-                <p className="pl-8 pr-8 pt-5 pb-8">
+                <p className="pl-2 pt-5 pb-10">
                     Careers and jobs: <a className="text-blue-900 hover:underline" href="mailto:jobs@qem-global.com">jobs@qem-global.com</a>
                 </p>
             </div>
