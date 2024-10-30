@@ -1,17 +1,12 @@
 import React, {Component} from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
-import background from './images/background.jpg';
-
-import cover1 from './images/cover.png';
-import cover2 from './images/cover1.png';
-import cover3 from './images/cover2.png';
-import cover4 from './images/cover3.png';
+import background from './images/background.png';
 
 function Home() {
     return (
         <div id='home'>
-        {/* <div style={{marginTop: '90.25px', clear: 'both'}}></div> */}
+        <div style={{marginTop: '80px', clear: 'both'}}></div>
         <img src={background} alt="background" />
         
         {/* <Carousel

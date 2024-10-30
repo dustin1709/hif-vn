@@ -1,59 +1,77 @@
 import React from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Listings from "./components/Listings";
 
 function Careers() {
+    const settings = {
+        dots: true,
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 1000,
+        speed: 500,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                  slidesToShow: 2
+                }
+              },
+              {
+                breakpoint: 930,
+                settings: {
+                  slidesToShow: 1
+                }
+              }
+        ]
+    };
     return (
-        <div id="careers">
-            <div className="p-8 bg-yellow-900">
-                <h1 className="text-2xl text-white">Careers at QEM</h1>
-                <h2 className="pt-5 text-white text-xl pb-2 w-[172px]" style={{borderBottom: '5px solid #db9a16'}}>Why work at QEM?</h2>
-                <p className="pt-3 pb-5 text-white">
-                    At QEM, we believe in fostering talent and creating opportunities for growth. A **career** with us means working in a dynamic, fast-paced environment where innovation and expertise drive success. We are always on the lookout for motivated individuals who are passionate about commodities trading, logistics, software development, and consulting. At QEM, we offer competitive benefits, professional development opportunities, and a collaborative culture that encourages teamwork and innovation. Join us and be a part of shaping the future of global trade and solutions.
+        <div id="real-estate">
+            <div className="p-8">
+                <h1 className="text-4xl w-[240px] pb-3" style={{borderBottom: '5px solid #021d68'}}>HIF Real Estate</h1>
+                <p className="pt-3 pb-5">
+                    <ul>
+                        <li>Developing real estate cash projects like student residence in Athens, Greece, to cater to investors participating in the Greek Golden Visa program.</li>
+                        <li>Selecting prime project locations with easy access to business and academic hubs to deliver strong and sustainable ROI as well as maximize financial benefits for investors over the long haul.</li>
+                        <li>Developing value projects such as luxury family apartments, serviced apartments and hotels, providing an exceptional living experience for our partners and investors.</li>
+                    </ul>
                 </p>
-                <h2 className="pt-5 text-white text-xl pb-2 w-[132px]" style={{borderBottom: '5px solid #db9a16'}}>
-                    Job Openings
-                </h2>
-                <p className="pt-3 pb-5 text-white">
-                    With growing demand, we’re expanding our team to better support our clients and meet the needs of our business. 
-                    Our aim is to motivate and engage our employees, fostering a culture of collaboration and excellence. 
-                    We offer performance-based bonuses, team incentives, and recognition rewards. We believe in celebrating success and ensuring that everyone shares in the achievements of the company.
+                <h2 className="pt-5 text-xl pb-2 w-[190px]" style={{borderBottom: '5px solid #021d68'}}>Some of Our Projects</h2>
+                <p className="pt-3 pb-5">
+                    Our premium real estate projects, handpicked for their unbeatable locations and designed with renters in mind. Whether you're looking for easy access to public transportation, vibrant local communities, or proximity to key amenities, our properties offer unparalleled convenience. Each project is thoughtfully developed to provide an effortless rental experience, ensuring tenants enjoy both comfort and accessibility. Invest in a space where location meets lifestyle, making renting simpler, faster, and more enjoyable. Secure your future today with HIF—your gateway to prime living.
                 </p>
-                <div className="p-3">
-                    <div className="p-5" style={{color: '#fcde9f'}}>
-                        <h2>Data Analyst</h2>
-                        <ul>
-                            <li>Location: Hanoi/Ho Chi Minh, Vietnam</li>
-                        </ul>
-                    </div>
-                    <div className="p-5" style={{color: '#fcde9f'}}>
-                        <h2>Backend Developer</h2>
-                        <ul>
-                            <li>Location: Hanoi/Ho Chi Minh, Vietnam</li>
-                            <li>Tools: Java or Python</li>
-                        </ul>
-                    </div>
-                    <div className="p-5" style={{color: '#fcde9f'}}>
-                        <h2>Frontend Developer</h2>
-                        <ul>
-                            <li>Location: Hanoi/Ho Chi Minh, Vietnam</li>
-                            <li>Tools: ReactJS, JavaScript, Flutter, or Angular</li>
-                        </ul>
-                    </div>
-                    <div className="p-5" style={{color: '#fcde9f'}}>
-                        <h2>UI/UX Designer</h2>
-                        <ul>
-                            <li>Location: Hanoi/Ho Chi Minh, Vietnam</li>
-                            <li>Must present past portfolio or past projects.</li>
-                            <li>Tools: Any design or wireframing tools. Prefer Figma, XD, PS, and Illustrator.</li>
-                        </ul>
-                    </div>
-                    <div className="p-5" style={{color: '#fcde9f'}}>
-                        <h2>Jr Account Manager</h2>
-                        <ul>
-                            <li>Location: Hanoi, Vietnam</li>
-                            <li>Require traveling more than 25% of the time.</li>
-                        </ul>
-                    </div>
-                </div>
+                <Slider {...settings}>
+                {
+                    Listings.map((property) => {return (
+                        <div key={property.id} className='pl-3 pr-3 pb-3 pt-2 flex items-center justify-center'>
+                            <div className='flex justify-center rounded-t-xl pt-5' style={{backgroundColor: '#e0e0eb'}}>
+                                <img src={property.image} className="h-[300px]" style={{borderRadius: '7%'}} />
+                            </div>
+                            <div className="p-2 text-center" style={{backgroundColor: '#e0e0eb'}}>
+                                <h2 className="text-3xl">{property.name}</h2>
+                            </div>
+                            <div style={{backgroundColor: '#e0e0eb'}} className="rounded-b-xl h-[400px]">
+                                <h2 className="pt-3 pl-5 text-2xl">{property.location}</h2>
+                                <ul className="pb-3 pt-2 pl-5 text-xl">
+                                    <li>{property.sp1}</li>
+                                    <li>{property.sp2}</li>
+                                    <li>{property.sp3}</li>
+                                    {property.sp4 == "" ? <li>&nbsp;</li> : <li>{property.sp4}</li>}
+                                    {property.sp5 == "" ? <li>&nbsp;</li> : <li>{property.sp5}</li>}
+                                    {property.sp6 == "" ? <li>&nbsp;</li> : <li>{property.sp6}</li>}
+                                    {property.sp7 == "" ? <li>&nbsp;</li> : <li>{property.sp7}</li>}
+                                    {property.sp8 == "" ? <li>&nbsp;</li> : <li>{property.sp8}</li>}
+                                    {property.sp9 == "" ? <li>&nbsp;</li> : <li>{property.sp9}</li>}
+                                    {property.sp10 == "" ? <li>&nbsp;</li> : <li>{property.sp10}</li>}
+                                </ul>
+                            </div>
+                        </div>
+                    )})
+                }
+                </Slider>
             </div>
         </div>
     )

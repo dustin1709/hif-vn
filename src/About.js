@@ -1,5 +1,4 @@
 import React from "react";
-import desc from './images/desc.png';
 import './css/About.css';
 
 function About() {
@@ -9,18 +8,20 @@ function About() {
 
             <div className="paragraph">
                 <div>
-                    <img className="p-1" src={desc} alt='logo2' />
+                <video muted autoPlay loop playsInline>
+                    <source src="https://hif-greece.s3.ap-northeast-1.amazonaws.com/PROJECT.mp4" type="video/mp4" />
+                </video>
                 </div>
 
                 <div>
                     <p className="pb-5 pl-1 pr-1 mt-1 mb-2">
-                        QEM is independently owned and operated by its leadership team alongside global business partners. We are dedicated to cultivating enduring and sustainable partnerships with our clients and suppliers.
+                        Hellenic Investment Fund (HIF) Co IKE takes pride in its team of highly experienced professionals in financial investment, real estate development, construction, education, and international relations. By its strong commitment to professionalism and satisfactory client experience, our organization is structured into key divisions covering design and construction, project management, real estate leasing and management, client care and community relations development in Greece.
                     </p>
                     <p className="pb-5 pl-1 pr-1 mt-1 mb-2">
-                        Specializing in the procurement, storage, and delivery of bulk materials, we serve clients across the world. Our commitment to responsible trade ensures we consistently meet the highest standards in operational efficiency, safety, and quality throughout our supply chain.
+                        We also specialize in the procurement, storage, and delivery of bulk materials, we serve clients across the world. Our commitment to responsible trade ensures we consistently meet the highest standards in operational efficiency, safety, and quality throughout our supply chain.
                     </p>
                     <p className="pb-5 pl-1 pr-1 mt-1 mb-2">
-                        QEM was founded with a mission to support both developing and established resource companies, united by a vision to create a brighter, more sustainable future for the industry.
+                        HIF CONSULTING (SINGAPORE) PTE. LTD. was founded with a mission to support both developing and established resource companies, united by a vision to create a brighter, more sustainable future for the industry.
                     </p>
                 </div>
             </div>

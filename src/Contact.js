@@ -2,89 +2,62 @@ import React from "react";
 import { useState, useEffect, useRef } from "react";
 import emailjs from '@emailjs/browser';
 import picture from './images/port.jpg';
+import nature from './images/nature.jpg';
+import truck from './images/truck.jpg';
 
 function Contact() {
-    const form = useRef();
-    const uname = useRef();
-    const uemail = useRef();
-    const umsg = useRef();
-
-    const sendEmail = (e) => {
-        e.preventDefault();
-        emailjs
-        .sendForm(
-            "service_5ojwmpp",
-            "template_ymmgqcd",
-            form.current,
-            "NevPtted5-duU2EcX"
-        )
-        .then(
-            (result) => {
-                console.log(result.text);
-                console.log("message sent");
-                alert("email sent");
-                uname.current.value = "";
-                uemail.current.value = "";
-                umsg.current.value = "";
-            },
-            (error) => {
-                console.log(error.text);
-            }
-        );
-    };
+    
 
     return (
-        <div id='contact' className="pt-5">
-            <div className="p-5">
-                <h2 className='text-headingColor font-[700] text-[2.5rem] mb-8'>
-                Contact Us
-                </h2>
-                <div className='md:flex justify-between items-center'>
-                <div className='w-full md:w-2/5 h-[300px] sm:h-[450px] cdesk'>
-                    <figure>
-                    <img className='h-[300px] sm:h-[450px]' src={picture} />
-                    </figure>
-                </div>
-
-                <div className='w-full mt-8 md:mt-0 md:w-3/5 sm:h-[450px] lg:flex items-center bg-gray-200 px-4
-                lg:px-8 py-8'>
-                    <form ref={form} onSubmit={sendEmail} className='w-full'>
-                    <div className="mb-5">
-                        <input type='text' ref={uname} name="user_name" placeholder='Title' className='w-full p-3 focus:outline-none rounded-[1px] text-[26px]' />
-                    </div>
-                    <div className="mb-5">
-                        <input type='text' ref={uemail} name="user_email" placeholder='Email address' className='w-full p-3 focus:outline-none rounded-[1px] text-[26px]' />
-                    </div>
-                    <div className="mb-5">
-                        <textarea 
-                        ref={umsg} 
-                        name="message"
-                        type='text' 
-                        rows={3} 
-                        placeholder='write something here...' 
-                        className='w-full p-3 focus:outline-none rounded-[1px] text-[26px]' />
-                    </div>
-
-                    <button 
-                    type='submit' 
-                    value="Send" 
-                    className='w-full p-5 focus:outline-none rounded-[1px] bg-blue-900 text-white 
-                    hover:bg-blue-500 text-center ease-linear duration-150 text-[26px]'>
-                        Submit
-                    </button>
-                    </form>
-                </div>
-                </div>
+        <div id='import-export' className="pt-7 pl-7 pr-5 pb-5" style={{backgroundColor: '#0C0404'}}>
+            <h1 className="text-4xl w-[211px] text-white pb-4" style={{borderBottom: '5px solid white'}}>Import Export</h1>
+            <div className="pt-5 pb-5" style={{
+                display: 'grid',
+                gridTemplateColumns: '35% 65%',
+            }}>
+            <img src={picture} />
+            <p className="pb-5 ml-5 text-white">
+                As an independent trading company. With a hands-on approach, we don’t just focus on trading, but also on providing innovative products and practical bulk supply chain solutions.
+            </p>
             </div>
-            <div className="pl-5 pt-2 pb-8">
-                <h1 className="text-xl font-bold">Contact emails</h1>
-                <p className="pl-2 pt-5">
-                    For requesting purchase of goods and services: <a className="text-blue-900 hover:underline" href="mailto:business@qem-global.com">business@qem-global.com</a>
-                </p>
-                <p className="pl-2 pt-5 pb-10">
-                    Careers and jobs: <a className="text-blue-900 hover:underline" href="mailto:jobs@qem-global.com">jobs@qem-global.com</a>
+            <h1 className="text-xl w-[120px] text-white pb-2" style={{borderBottom: '2px solid white'}}>Sustainability</h1>
+            <div className="pt-5 pb-5" style={{
+                display: 'grid',
+                gridTemplateColumns: '35% 65%',
+            }}>
+                <img src={nature} />
+                <p className="pb-5 ml-5 text-white">
+                    At HIF import export trading arm, we are committed to sustainability is at the core of everything we do. We strive to operate responsibly, minimizing environmental impact while ensuring long-term resource management. By integrating sustainable practices into our operations and supply chains, we aim to protect the environment, support local communities, and contribute to a greener future. Sustainability isn't just a goal—it's a guiding principle in our journey toward creating value for our stakeholders and the planet.
                 </p>
             </div>
+            <h1 className="text-xl w-[110px] text-white pb-2" style={{borderBottom: '2px solid white'}}>Core Values</h1>
+            <div className="pt-5 pb-5" style={{
+                display: 'grid',
+                gridTemplateColumns: '35% 65%',
+            }}>
+                <img src={truck} />
+                <p className="pb-5 ml-5 text-white">
+                    We believe that by delivering dependable solutions and standing by our commitments, long-term success naturally follows. Our focus on reliability ensures that our clients can count on us to meet their needs, no matter the circumstances.
+                </p>
+            </div>
+
+            <h1 className="text-xl w-[90px] text-white pb-2 pt-3" style={{borderBottom: '2px solid white'}}>Key Areas</h1>
+            <ul className="pt-3 pb-5 text-white">
+                <li>
+                    Metals
+                </li>
+                <li>
+                    Agricultural products
+                </li>
+                <li>
+                    Energy
+                </li>
+                <li>
+                    Hand crafted products
+                </li>
+            </ul>
+            
+            <div style={{marginTop: '80px', clear: 'both'}}></div>
         </div>
     )
 }

@@ -16,7 +16,9 @@
 
 .box h1 {
     padding-bottom: 10px;
-    border-bottom: 2px solid bisque;
+    border-bottom: 2px solid rgb(254, 254, 254);
+    margin-left: 8%;
+    margin-right: 8%;
 }
 
 .box p {

@@ -22,16 +22,16 @@ function Footer() {
                         <a href='#business'>What we do</a>
                     </li>
                     <li className='nav-item'>
-                        <a href='#careers'>Careers</a>
+                        <a href='#real-estate'>Real Estate</a>
                     </li>
                     <li className='nav-item'>
-                        <a href='#contact'>Contact us</a>
+                        <a href='#import-export'>Import Export</a>
                     </li>
                 </ul>
                 <div className='bottom'>
                     <span className='line'></span>
                     <hr/>
-                    <p className='pt-5 flex items-center gap-[12px]'><FaCopyright /> {new Date().getFullYear()} QEM LTD. All rights reserved</p>
+                    <p className='pt-5 flex items-center gap-[12px]'><FaCopyright /> {new Date().getFullYear()} HIF CONSULTING (SINGAPORE) PTE. LTD. All rights reserved</p>
                 </div>
             </div>
         </div>

@@ -5,7 +5,7 @@
 @import "tailwindcss/utilities";
 
 :root {
-  --secondary-color: #0d0d0d;
+  --secondary-color: #062a8c;
 }
 
 ::-webkit-scrollbar {
@@ -14,12 +14,12 @@
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #ffffff; 
+  background: #e9ecff5a; 
 }
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background:  #626263; 
+  background:  #062a8c; 
 }
 
 /* Handle on hover */

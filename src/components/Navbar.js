@@ -14,7 +14,7 @@ function Navbar() {
         <div className='header'>
             <nav className='navbar'>
                 <Link to='home' className='logo'>
-                    <img src={process.env.PUBLIC_URL + '/QEM.png'} alt='logo' />
+                    <img src={process.env.PUBLIC_URL + '/HIF.png'} alt='logo' />
                 </Link>
                 <div className='hamburger' onClick={handleClick}>
                     {click ? (<FaTimes size={30} style={{ color: 'black' }} />)
@@ -32,10 +32,10 @@ function Navbar() {
                         <Link to='business' spy={true} smooth={true} offset={-110} duration={500} onClick={closeMenu}>What we do</Link>
                     </li>
                     <li className='nav-item'>
-                        <Link to='careers' spy={true} smooth={true} offset={-110} duration={500} onClick={closeMenu}>Careers</Link>
+                        <Link to='real-estate' spy={true} smooth={true} offset={-110} duration={500} onClick={closeMenu}>Real Estate</Link>
                     </li>
                     <li className='nav-item'>
-                        <Link to='contact' spy={true} smooth={true} offset={-110} duration={500} onClick={closeMenu}>Contact us</Link>
+                        <Link to='import-export' spy={true} smooth={true} offset={-110} duration={500} onClick={closeMenu}>Import Export</Link>
                     </li>
                 </ul>
             </nav>
