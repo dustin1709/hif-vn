@@ -53,9 +53,9 @@ function Careers() {
                             <div className="p-2 text-center" style={{backgroundColor: '#e0e0eb'}}>
                                 <h2 className="text-3xl">{property.name}</h2>
                             </div>
-                            <div style={{backgroundColor: '#e0e0eb'}} className="rounded-b-xl h-[400px]">
+                            <div style={{backgroundColor: '#e0e0eb'}} className="rounded-b-xl h-[500px]">
                                 <h2 className="pt-3 pl-5 text-2xl">{property.location}</h2>
-                                <ul className="pb-3 pt-2 pl-5 text-xl">
+                                <ul className="pb-3 pt-2 pl-5 pr-2 text-xl">
                                     <li>{property.sp1}</li>
                                     <li>{property.sp2}</li>
                                     <li>{property.sp3}</li>
