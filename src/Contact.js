@@ -10,7 +10,7 @@ function Contact() {
 
     return (
         <div id='import-export' className="pt-7 pl-7 pr-5 pb-5" style={{backgroundColor: '#0C0404'}}>
-            <h1 className="text-4xl w-[211px] text-white pb-4" style={{borderBottom: '5px solid white'}}>Import Export</h1>
+            <h1 className="text-4xl w-[211px] text-white pb-4 pt-5" style={{borderBottom: '5px solid white'}}>Import Export</h1>
             <div className="pt-5 pb-5" style={{
                 display: 'grid',
                 gridTemplateColumns: '35% 65%',
