@@ -22,7 +22,7 @@ function Footer() {
                         <a href='#business'>What we do</a>
                     </li>
                     <li className='nav-item'>
-                        <a href='#real-estate'>Real Estate</a>
+                        <a href='#real-estate'>Real Estate & Golden Visa</a>
                     </li>
                     <li className='nav-item'>
                         <a href='#import-export'>Import Export</a>

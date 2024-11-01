@@ -32,7 +32,7 @@ function Navbar() {
                         <Link to='business' spy={true} smooth={true} offset={-110} duration={500} onClick={closeMenu}>What we do</Link>
                     </li>
                     <li className='nav-item'>
-                        <Link to='real-estate' spy={true} smooth={true} offset={-110} duration={500} onClick={closeMenu}>Real Estate</Link>
+                        <Link to='real-estate' spy={true} smooth={true} offset={-110} duration={500} onClick={closeMenu}>Real Estate & Golden Visa</Link>
                     </li>
                     <li className='nav-item'>
                         <Link to='import-export' spy={true} smooth={true} offset={-110} duration={500} onClick={closeMenu}>Import Export</Link>

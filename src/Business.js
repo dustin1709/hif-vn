@@ -1,5 +1,5 @@
 import React from "react";
-import trading from './images/trading.png';
+import trading from './images/EU.png';
 import cargo from './images/logistic.png';
 import building from './images/real-estate.png';
 import nav from './images/nav.png';
@@ -8,16 +8,16 @@ import './css/Business.css';
 function Business() {
     return (
         <div id='business' className="p-5" style={{backgroundColor: '#021d68'}}>
-            <h1 className="text-4xl text-white pl-5 pr-5 pt-5 pb-7">Our businesses</h1>
+            <h1 className="text-4xl text-white ml-3 pr-5 pt-5 pb-3 w-[205px]" style={{borderBottom: '5px solid #FFFF'}}>What we do</h1>
             <div className="business">
                 <div className="box">
                     <img src={trading} alt="trading-icon"/>
-                    <h1 className="text-white text-center text-2xl">Investment</h1>
-                    <p>We invest in a wide range of assets, including real estates, stocks, ETFs, startups, and commodities such as aluminum, copper, steel, and select agricultural products. Our diversified portfolio allows us to meet the varied needs of our clients while maintaining a strong presence in global markets.</p>
+                    <h1 className="text-white text-center text-2xl">Golden Visa Immigration Investment Consulting</h1>
+                    <p>At HIF Consulting Singapore Pte Ltd., we are dedicated to guiding you through each step of your investment journey toward a secure and prosperous future. With a specialized focus on Golden Visa programs, we provide expert consulting that simplifies the immigration process while maximizing investment potential in some of the world's most desirable markets. Discover the advantages of global mobility and secure investments with a partner who puts your success at the heart of everything we do.</p>
                 </div>
                 <div className="box">
                     <img src={building} alt="building-icon"/>
-                    <h1 className="text-white text-center text-2xl">Real Estate Development</h1>
+                    <h1 className="text-white text-center text-2xl">Real Estate Investment Consulting</h1>
                     <p>
                         Positioning and developing real estate projects in Athens, Greece, to cater to international investors participating in the Greek Golden Visa program.
                         <br />
@@ -35,7 +35,7 @@ function Business() {
                 </div>
                 <div className="box">
                     <img src={nav} alt="navigation-icon"/>
-                    <h1 className="text-white text-center text-2xl">Consulting</h1>
+                    <h1 className="text-white text-center text-2xl">Education Consulting</h1>
                     <p>
                         Our team of experts offers tailored advice on risk management, market analysis, and operational efficiency, ensuring that businesses are equipped with the insights and tools necessary for sustainable growth. Whether optimizing procurement processes or identifying new market opportunities, our consulting services are designed to deliver long-term value and success.
                     </p>
