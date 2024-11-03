@@ -7,12 +7,6 @@
 .footer .container {
     max-width: 1240px;
     margin: auto;
-    text-align: center;
-}
-
-.footer ul {
-    display: flex;
-    justify-content: center;
 }
 
 .footer li {
@@ -20,7 +14,7 @@
 }
 
 .footer li a {
-    color: #121212;
+    color: #fcfcfc;
 }
 
 .footer li a:hover {
@@ -36,11 +30,14 @@
     margin-bottom: 1rem;
 }
 
-@media only screen and (max-width: 512px) {
+@media only screen and (max-width: 532px) {
     .footer ul {
         display: block;
     }
     .footer .container {
         text-align: left;
+    }
+    .footer li a {
+        color: #121212;
     }
 }

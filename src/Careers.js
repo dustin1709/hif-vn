@@ -61,6 +61,11 @@ function Careers() {
                     )})
                 }
                 </Slider>
+                <div className="p-8 clear-both"></div>
+                <h2 className="pt-10 text-xl pb-2 w-[157px]" style={{borderBottom: '5px solid #021d68'}}>Advertiser Notice</h2>
+                <p className="pt-3 pb-8 pr-5">
+                    With advertisement related to Golden Visa by real estate investment, HIF CONSULTING COMPANY LIMITED (Vietnam) will NOT be accepting applications directly from investors. If you are an interested investor, please contact our local agencies in Vietnam.
+                </p>
             </div>
         </div>
     )

@@ -12,6 +12,9 @@ function Footer() {
             }}>
             <div className='container'>
                 <ul>
+                    <li>
+                    <img src={process.env.PUBLIC_URL + '/HIF.png'} alt='logo' width='250px'/>
+                    </li>
                     <li className='nav-item'>
                         <a href='/'>Home</a>
                     </li>
