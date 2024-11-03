@@ -13,7 +13,7 @@ function Business() {
                 <div className="box">
                     <img src={trading} alt="trading-icon"/>
                     <h1 className="text-white text-center text-2xl">Golden Visa Immigration Investment Consulting</h1>
-                    <p>At HIF Consulting Singapore Pte Ltd., we are dedicated to guiding you through each step of your investment journey toward a secure and prosperous future. With a specialized focus on Golden Visa programs, we provide expert consulting that simplifies the immigration process while maximizing investment potential in some of the world's most desirable markets. Discover the advantages of global mobility and secure investments with a partner who puts your success at the heart of everything we do.</p>
+                    <p>At HIF CONSULTING COMPANY LIMITED, we are dedicated to guiding you through each step of your investment journey toward a secure and prosperous future. With a specialized focus on Golden Visa programs, we provide expert consulting that simplifies the immigration process while maximizing investment potential in some of the world's most desirable markets. Discover the advantages of global mobility and secure investments with a partner who puts your success at the heart of everything we do.</p>
                 </div>
                 <div className="box">
                     <img src={building} alt="building-icon"/>

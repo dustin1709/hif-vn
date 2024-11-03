@@ -21,7 +21,7 @@ function About() {
                         We also specialize in the procurement, storage, and delivery of bulk materials, we serve clients across the world. Our commitment to responsible trade ensures we consistently meet the highest standards in operational efficiency, safety, and quality throughout our supply chain.
                     </p>
                     <p className="pb-5 pl-1 pr-1 mt-1 mb-2">
-                        HIF CONSULTING (SINGAPORE) PTE. LTD. was founded with a mission to support both developing and established resource companies, united by a vision to create a brighter, more sustainable future for the industry.
+                        HIF CONSULTING COMPANY LIMITED (TNHH Tư Vấn HIF) was founded with a mission to support both developing and established resource companies, united by a vision to create a brighter, more sustainable future for the industry.
                     </p>
                 </div>
             </div>

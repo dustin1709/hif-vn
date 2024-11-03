@@ -20,16 +20,16 @@
 }
 
 .footer li a {
-    color: #fff;
+    color: #121212;
 }
 
 .footer li a:hover {
     padding-bottom: 12px;
-    border-bottom: 3px solid #fff;
+    border-bottom: 3px solid #555555;
 }
 
 .bottom {
-    padding-top: 3rem;
+    padding-top: 7rem;
 }
 
 .line {

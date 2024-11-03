@@ -6,7 +6,7 @@ import background from './images/background.png';
 function Home() {
     return (
         <div id='home'>
-        <div style={{marginTop: '80px', clear: 'both'}}></div>
+        <div style={{marginTop: '70px', clear: 'both'}}></div>
         <img src={background} alt="background" />
         
         {/* <Carousel

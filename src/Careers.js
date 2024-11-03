@@ -37,7 +37,7 @@ function Careers() {
                         <li>As a real estate developer, HIF develops real estate cash projects like student residence in Athens, Greece, to cater to investors participating in the Greek Golden Visa program.</li>
                         <li>Selecting prime project locations with easy access to business and academic hubs to deliver strong and sustainable ROI as well as maximize financial benefits for investors over the long haul.</li>
                         <li>Developing value projects such as luxury family apartments, serviced apartments and hotels, providing an exceptional living experience for our partners and investors.</li>
-                        <li>As a consulting firm, HIF Consulting Singapore Pte Ltd, helps HIF clients navigate the best property for Golden Visa investment for their families.</li>
+                        <li>As a consulting firm, HIF CONSULTING COMPANY LIMITED, helps HIF clients navigate the best property for Golden Visa investment for their families.</li>
                     </ul>
                 </p>
                 <h2 className="pt-5 text-xl pb-2 md:w-[250px] w-[205px]" style={{borderBottom: '5px solid #021d68'}}>Some of Hellenic Investment Fund Projects</h2>
