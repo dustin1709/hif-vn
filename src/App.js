@@ -7,20 +7,26 @@ import Navbar from './components/Navbar';
 import Contact from './Contact';
 import Home from './Home';
 
+import { Route, Routes } from 'react-router-dom';
+import Swift from './Swift';
+
 function App() {
-  function onCopyHandler(e) {
-    e.preventDefault();
-    e.stopPropagation();
-  }
   return (
-    <div className="App" onCopy={onCopyHandler}>
+    <div className="App">
       <Navbar />
-      <Home />
+      <main>
+        <Routes>
+          <Route path="/bank" element={<Swift />} />
+          <Route path="/" element={<Home />} />
+        </Routes>
+      </main>
+      
       <About />
       <Business />
       <Careers />
       <Contact />
       <Footer />
+      
     </div>
   );
 }
